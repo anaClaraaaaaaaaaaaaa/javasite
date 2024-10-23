@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projetos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+   <div class="linha opacidade"></div>
+    <header>
+       
+        <ul class="nav opacidade">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="habilidades.html">HABILIDADES</a></li>
+            <li class="aa">ANA CLARA</li>   
+            <li><button id="botao" > Alternar modo</button> <script src="script.js"></script> </li>
+            
+        </ul>
+
+
+
+     
+       </header>
+      
+
+    
+    
+    
+    </div>
+      
+
+        <footer class="rodape opacidade"> 
+      <ul>
+        <li class="socorro">4354546565</li>
+        <li class="socorro">22301593@aluno.cotemig.com.br</li>
+      </ul>
+
+
+
+        </footer>
+
+
+
+            <div class="sidebar animacao"> <img src="image (4)-Photoroom.png" alt=""></div>
+
+     <div class="lalala ">
+
+        <div class="centro animacao">
+        
+         
+          
+            <div class="aaaa ">
+                
+                <ul>
+                
+         
+           
+                
+      
+      <img class="estrela" src="unnamed-removebg-preview.png" alt="">
+                <li class="projeto1" >Projetos</li> 
+                <li class="a">Projetos</li> 
+                <img class="estrela1" src="unnamed-removebg-preview.png" alt="">
+                <li class="projeto2">Projetos</li> 
+                
+
+            
+            
+
+            </ul>
+            </div>
+              
+          
+  
+
+                <div class="texto">
+                   <img src="unnamed-Photoroom.png" alt="" class="tamanho">
+                   <div class="linha1"></div> 
+                   <div class="texto2">Site Delivery <br> <a href="https://anaclaraaaaaaaaaaaaa.github.io/sitedelivery/" class="semdecoracao">https://anaclaraaaaaaaaaaaaa.github.io/sitedelivery/</a></div>
+                   <img src="unnamed-Photoroom.png" alt="" class="imagemsocorro">
+                   <div class="linha2"></div> 
+                   <div class="texto4">Display grid <br> <a href=" https://anaclaraaaaaaaaaaaaa.github.io/DDisplayGGrid/" class="semdecoracao">https://anaclaraaaaaaaaaaaaa.github.io/DDisplayGGrid/</a> </div>
+                   <img src="unnamed-Photoroom.png" alt="" class="imagemsocorro2">
+                
+                   <div class="texto3">Display flex <br> <a href="https://anaclaraaaaaaaaaaaaa.github.io/display-flex-/" class="semdecoracao">https://anaclaraaaaaaaaaaaaa.github.io/display-flex-/</a></div>
+    
+                </div>
+             
+                 <div class="arrastarprolado"><div class="animacao"> <button id="aumentarFonte">Aumentar Fonte</button> 
+                 <button id="diminuirFonte">Diminuir Fonte</button></div></div>
+
+                <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto2"); 
+                const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+                texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto2"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+                const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+                  <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+
+
+                { const texto = document.querySelector(".texto3"); 
+                const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+                texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto3"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+                const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+
+                <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto4"); 
+                const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+                texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto4"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+                const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+
+                  
+    <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.animacao'); items.forEach(item => { setTimeout(() => 
+        { item.classList.add('show'); }, 500);}); }); </script>
+          
+          <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.opacidade'); items.forEach(item => { setTimeout(() => { item.classList.add('show');
+          }, 500); }); }); </script> 
+            
+    
+        </div>
+        
+     
+        
+</body>
+</html>

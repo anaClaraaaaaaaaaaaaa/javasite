@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+   <div class="linha opacidade"></div>
+    <header>
+       
+        <ul class="nav opacidade">
+            <li><a href="">INICIO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="projetos.html">PROJETOS</a></li>
+            <li class="aa">ANA CLARA</li>   
+            <li><button id="botao" > Alternar modo</button> <script src="script.js"></script> </li>
+            
+        </ul>
+
+
+
+     
+       </header>
+      
+
+    
+    
+    
+    </div>
+      
+
+        <footer class="rodape opacidade"> 
+      <ul>
+        <li class="socorro">4354546565</li>
+        <li class="socorro">22301593@aluno.cotemig.com.br</li>
+      </ul>
+
+
+
+        </footer>
+
+
+        <div class="sidebar animacao"> <img src="Remove-bg.ai_1726681589451.png" alt=""></div>
+
+
+     <div class="help">
+
+        <div class="centro animacao" >
+            <img class="estrela " src="unnamed-removebg-preview.png" alt="">
+         
+            <h1 class="port ">Porti <br>   
+                <img class="estrela1 " src="unnamed-removebg-preview.png" alt="">
+            <div class="aaaa ">folio</div></h1>
+  
+            <div class="texto animacao">
+
+            Olá, sou uma estudante de Técnico em Informática com grande   interesse em tecnologia e inovação.
+             Estou desenvolvendo minhas  habilidades e conhecimentos para contribuir efetivamente em projetos futuros. 
+              Acompanhe meu portfólio para ver minha evolução.
+    
+    
+            </div>
+         
+
+
+        </div>
+
+        <div class="arrastarprolado"><button id="aumentarFonte" class="animacao">Aumentar Fonte</button>  
+          <button id="diminuirFonte" class="animacao">Diminuir Fonte</button></div>
+
+        <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+        { const texto = document.querySelector(".texto"); 
+        const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+        texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+        { const texto = document.querySelector(".texto"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+        const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+     
+     <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.animacao'); items.forEach(item => { setTimeout(() => 
+     { item.classList.add('show'); }, 500);}); }); </script>
+      
+      <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.opacidade'); items.forEach(item => { setTimeout(() => { item.classList.add('show');
+       }, 500); }); }); </script> 
+        
+</body>
+</html>

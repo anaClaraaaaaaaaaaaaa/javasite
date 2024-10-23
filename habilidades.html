@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="habilidades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body class="dark-mode">
+   <div class="linha opacidade"></div>
+    <header>
+       
+        <ul class="nav opacidade">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+            <li><a href="projetos.html">PROJETOS</a></li>
+            <li class="aa">ANA CLARA</li>   
+            <li><button id="botao" > Alternar modo</button> <script src="script.js"></script> </li>
+            
+        </ul>
+
+
+
+     
+       </header>
+      
+
+    
+    
+    
+    </div>
+      
+
+        <footer class="rodape opacidade"> 
+      <ul>
+        <li class="socorro">4354546565</li>
+        <li class="socorro">22301593@aluno.cotemig.com.br</li>
+      </ul>
+
+
+
+        </footer>
+
+
+
+            <div class="sidebar animacao"></div>
+
+     <div class="">
+
+        <div class="centro">
+        
+         
+          
+            <div class="aaaa animacao">
+                
+                <ul>
+                    <img class="estrela" src="estrela (2).png" alt="">
+                <li class="contato1" >HABILIDADES</li> 
+      
+                <li class="a">HABILIDADES</li> 
+                
+                
+
+            
+            
+            </ul>
+
+            </div>
+                
+          
+  
+            <div class="animacao">
+                <div class="texto ">
+                   
+                    Possuo habilidades diversas que incluem um pensamento lógico eficaz, fluência intermediária em inglês e uma  capacidade<br> de braprendizado rápido. 
+                    Destaco-me pela criatividade na solução de 
+                     problemas complexos e pela comunicação clara e eficiente, essencial<br> para colaboração em equipe e apresentação de conceitos.
+    
+                </div>
+          </div>
+          <div class="arrastarprolado"><div class="animacao lado"><button id="aumentarFonte">Aumentar Fonte</button> 
+            <button id="diminuirFonte">Diminuir Fonte</button></div> 
+             
+                <div class="subir">
+                <div class="quadrado animacao">
+                    <div class="o">
+                   <div><img src="img1.png" alt="" class="imagem animacao"></div>
+                   <div><img src="img2.png" alt="" class="imagem animacao" height="204px"></div>
+                   <div><img src="img3.png" alt="" class="imagem animacao" height="204px"></div>
+                   <div><img src="img4.png" alt="" class="imagem animacao" height="204px"></div>
+                </div>
+                </div>
+                </div>
+                
+           </div>
+
+                <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto"); 
+                const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+                texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+                { const texto = document.querySelector(".texto"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+                const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+
+<script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.animacao'); items.forEach(item => { setTimeout(() => 
+    { item.classList.add('show'); }, 500);}); }); </script>
+      
+      <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.opacidade'); items.forEach(item => { setTimeout(() => { item.classList.add('show');
+      }, 500); }); }); </script> 
+        
+</body>
+</html>

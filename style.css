@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color:none ;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+}
+
+.aa{
+   color: rgba(238, 227, 198, 1);}
+
+   
+   body.dark-mode .aa{
+
+    color: rgba(74, 98, 63, 1);;
+   }
+
+   .animacao { opacity: 0; transform: translateY(100px); transition: opacity 0.5s ease-out, transform 0.5s ease-out; }
+    .animacao.show { opacity: 1; transform: translateY(0); } 
+
+   .opacidade { opacity: 0; transition: opacity 1s ease-in-out; } .opacidade.show { opacity: 1; }
+
+   button {
+    background-color: #fdf079;;
+    color: rgba(74, 98, 63, 1);
+    border: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+}
+
+button:hover {
+    background-color:rgba(255, 198, 51, 1);
+    
+    font-weight: bolder;
+   
+}
+#aumentarFonte{
+    margin-top: 20px;
+}
+header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 60px;
+  
+}
+
+header ul li a{ 
+    color: rgba(183, 145, 123, 0.95);
+    text-decoration: none;
+    
+} 
+
+
+
+
+header ul li a:hover{
+    background-color: rgba(183, 145, 123, 0.25);
+    border-radius: 10px;
+    height: 300px;
+
+}
+
+
+
+
+.sidebar {
+    
+      
+
+        left: 0;
+ 
+        padding: 20px;
+        margin-top: 77px;
+         padding-top: 90px;
+         position: absolute;
+         
+
+     
+         background-color: none;
+         height: 700px;
+         width: 1000px;
+         color: white;
+         font-size: 20px;
+         padding-top: 5vh;
+         margin: 0;
+         padding-left: 100px;
+     
+      
+         
+}
+
+.sidebar>img{
+    width: 600px;
+   
+}
+
+.centro{
+
+   
+    text-align: justify;
+    margin-top: 14%;
+   font-weight: 400;
+
+padding-top: 4.5%;
+  font-size: 20px;
+        font-family: "Poppins", sans-serif;
+       
+      
+}
+
+     
+
+     .help {
+    
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 100px;
+        margin-left: 1000px;
+    
+    
+        
+    }
+
+    .aaaa{
+        margin-left: 120px;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 100px;
+        color: rgba(238, 227, 198, 1);
+        position: relative;
+        z-index: 3;
+    }
+
+
+
+        h1{   font-family: "Bebas Neue", sans-serif;
+            font-size: 100px;
+            color: rgba(238, 227, 198, 1);}
+
+          .texto{
+            color:  rgba(238, 227, 198, 1); ;
+          }
+
+
+            .estrela{
+                position: absolute;
+                z-index: 1;
+       
+             transform: translate(-70px, -70px);
+            }
+
+            .estrela1{
+                position: absolute;
+        z-index: 2;
+        transform: translate(250px, -5px);
+        
+
+
+
+            }
+
+            .port{
+     
+                z-index: 0;
+                position: relative;
+
+            }
+
+        
+
+            .rodape{
+                height: 10%;
+                width: 100%;
+                background-color:rgba(238, 227, 198, 1); 
+                position: fixed;
+                padding: -10px, 10px;
+                bottom: 0; 
+              
+            }
+
+          
+
+       body.light-mode {  background-color: rgba(74, 98, 63, 1); color: rgb(255, 255, 255); }
+        body.dark-mode { background-color:rgba(238, 227, 198, 1);color: white; }
+
+        body.dark-mode .port{
+            color: rgba(74, 98, 63, 1);
+
+        }
+
+        body.dark-mode .aaaa{
+            color: rgba(74, 98, 63, 1);
+
+        }
+
+        body.dark-mode .texto{
+            color: rgba(136, 103, 84, 0.95);
+
+        }
+
+        body.dark-mode .rodape{
+            background-color: rgba(74, 98, 63, 1);
+
+        }
+
+        
+
+
+            footer ul li{
+                display: inline-block;
+                padding: 10px 10px;
+                margin-right: 60px;
+                text-decoration: none;
+                color: rgba(183, 145, 123, 0.95);
+                font-family: "Bebas Neue", sans-serif;
+                font-size: 30px;
+              transform: translateY(20px);
+              margin: 0;
+              
+            }
+
+            .linha{
+                height: 150%;
+                width: 2.5px;
+               position: fixed;
+                background-color: white;
+                right: 60px;
+             
+        
+            }
+
+            #botao{
+                background-color: transparent;
+                color: rgba(183, 145, 123, 0.95);
+                font-family: "Bebas Neue", sans-serif;
+                border: none;
+                font-size: 25px;
+                width: 170px;
+               
+            }
+
+            
+
+         
+
+            @media(max-width: 768px){
+
+      
+               
+            header {
+            background-color:none ;
+            height: 8vh;
+            display: flex;
+            align-items: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 25px;
+          
+            
+}
+            
+header ul li {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 0;
+ 
+   
+  
+}
+
+header ul li a{ 
+    color: rgba(183, 145, 123, 0.95);
+    text-decoration: none;
+    
+} 
+
+
+.aa{
+    color: rgba(238, 227, 198, 1);}
+    #botao{
+        background-color: transparent;
+        color: rgba(183, 145, 123, 0.95);
+        font-family: "Bebas Neue", sans-serif;
+        border: none;
+        font-size: 25px;
+        
+    }
+
+
+    .sidebar {
+    
+      
+
+        left: 0;
+ 
+        padding: 20px;
+        margin-top: 77px;
+         padding-top: 90px;
+         position: absolute;
+         
+
+     
+         background-color: none
+         ;
+         height: 700px;
+         width: 400px;
+         color: white;
+         font-size: 20px;
+         padding-top: 5vh;
+      
+        
+     
+      
+         
+}
+
+.sidebar>img{
+    width: 350px;
+   
+}
+
+.aaaa{
+    margin-left: 120px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    color: rgba(238, 227, 198, 1);
+    position: relative;
+    z-index: 3;
+    
+}
+
+
+
+    h1{   font-family: "Bebas Neue", sans-serif;
+        font-size: 70px;
+        color: rgba(238, 227, 198, 1);}
+
+      .texto{
+        color:  rgba(238, 227, 198, 1); 
+      
+        font-size: 15px;
+        margin-left: 400PX;
+        text-align: left;
+        margin-top: 10px;
+ 
+      }
+
+
+        .estrela{
+            position: absolute;
+          z-index: 1;
+            margin-top: 30px;
+          margin-left: 440PX;
+         height: 100px;
+        }
+
+        .estrela1{
+            position: absolute;
+    z-index: 2;
+    
+
+    margin-left: -40PX;
+    height: 100px;
+
+    
+
+
+
+        }
+
+        .port{
+ 
+            z-index: 0;
+            position: relative;
+           
+        margin-left: 400PX;
+
+        }
+
+
+        .centro{
+
+   
+            text-align: justify;
+            margin-top: 14%;
+           font-weight: 400;
+        
+        padding-top: 4.5%;
+          font-size: 15px;
+                font-family: "Poppins", sans-serif;
+               
+              
+        }
+
+        
+        .rodape{
+            height: 10%;
+            width: 100%;
+            background-color:rgba(238, 227, 198, 1); 
+            position: absolute;
+            padding: -10px, 10px;
+            bottom: 0; 
+   
+        }
+
+        .linha{
+            height: 90%;
+            width: 2.5px;
+           position: absolute;
+            background-color: white;
+            right: 30px;
+         
+    
+        }
+
+        
+     .help {
+    
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        font-family: "Poppins", sans-serif;
+        margin-top: 100px;
+        margin-left: 10px;
+    
+        
+    }
+
+    .arrastarprolado{
+        transform: translateX(397px);
+        
+    }
+
+    #aumentarFonte{
+        height: 25px;
+        width: 100px;
+        font-size: 12px;
+        
+    }
+
+    #diminuirFonte{
+        height: 25px;
+        width: 100px;
+        font-size: 12px;
+        
+    }
+
+
+   
+   
+        
+            }

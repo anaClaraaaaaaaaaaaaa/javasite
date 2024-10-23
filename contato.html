@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+   <div class="linha opacidade"></div>
+    <header>
+       
+        <ul class="nav opacidade">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="habilidades.html">HABILIDADES</a></li>
+            <li><a href="projetos.html">PROJETOS</a></li>
+            <li class="aa">ANA CLARA</li>   
+            <li><button id="botao" > Alternar modo</button> <script src="script.js"></script> </li>
+            
+        </ul>
+
+
+
+     
+       </header>
+      
+
+    
+    
+    
+    </div>
+      
+
+        <footer class="rodape opacidade"> 
+      <ul>
+        <li class="socorro">4354546565</li>
+        <li class="socorro">22301593@aluno.cotemig.com.br</li>
+      </ul>
+
+
+
+        </footer>
+
+
+
+            <div class="sidebar animacao"> <img src="image (1) (1).png" alt=""></div>
+
+  
+
+        <div class="centro animacao">
+        
+         
+          
+            <div class="aaaa">
+                
+                <ul>
+                <li class="contato1" >Contato</li> 
+                <li class="a">Contato</li> 
+                <li class="contato2">Contato</li> 
+                
+
+            
+            
+            </ul>
+
+            </div>
+                
+          
+  
+
+                <div class="texto animacao">
+                    <div class="arrastar">
+                    Fique à vontade para entrar em contato para qualquer dúvida ou oportunidade. <br>Estou aqui para ajudar e responder suas perguntas.</div>
+    
+                </div>
+             
+                
+        
+                
+
+        <div class="animacao">
+        <form action="#" method="post" onsubmit="confirmarEnvio(event)">
+            <label for="nome" class="cor" >Nome:</label> <br>
+            <input type="text" id="nome" name="nome" required placeholder="" class="fonte"> <hr><br>
+
+            <label for="email" class="cor">E-mail:</label>   <br>
+    
+            <input type="email" id="email" name="email" required placeholder="" class="fonte"> <hr><br>
+
+            <label for="mensagem" class="cor">Mensagem:</label> <br>
+            <textarea id="mensagem" name="mensagem" rows="4" required placeholder="" class="fonte"></textarea> <hr> <br>
+
+            <button type="submit" class="botaoo">Mandar</button>
+        </form>
+    </div>
+         
+        </div>
+        <div class="animacao"><button id="aumentarFonte">Aumentar Fonte</button> <button id="diminuirFonte">Diminuir Fonte</button></div>
+
+        <script> document.getElementById("aumentarFonte").addEventListener("click", function() 
+        { const texto = document.querySelector(".texto"); 
+        const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size'); const tamanhoAtual = parseFloat(estilo); 
+        texto.style.fontSize = (tamanhoAtual + 2) + "px"; }); document.getElementById("diminuirFonte").addEventListener("click", function() 
+        { const texto = document.querySelector(".texto"); const estilo = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+        const tamanhoAtual = parseFloat(estilo); texto.style.fontSize = (tamanhoAtual - 2) + "px"; }); </script>
+
+<script> function confirmarEnvio(event) { if (!confirm("Você realmente deseja enviar o formulário?")) { event.preventDefault(); } } </script>
+
+<script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.animacao'); items.forEach(item => { setTimeout(() => 
+    { item.classList.add('show'); }, 500);}); }); </script>
+     
+     <script> document.addEventListener("DOMContentLoaded", function() { const items = document.querySelectorAll('.opacidade'); items.forEach(item => { setTimeout(() => { item.classList.add('show');
+      }, 500); }); }); </script> 
+</body>
+</html>
